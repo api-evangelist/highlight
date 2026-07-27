@@ -1,7 +1,27 @@
 aid: highlight
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/highlight.png
 name: Highlight
-description: Highlight is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Highlight is a General Catalyst portfolio company added to the API Evangelist
+  network as a stub via the VC-portfolio harvest. Enrichment probing on
+  2026-07-20 found no active developer API surface to catalog: the company's
+  primary domain (highlightyourbrand.com) now returns only a JavaScript redirect
+  to a parked "/lander" page, and the source portfolio harvest already flagged
+  the entry as a non-API provider (is_api_provider false, no URL captured). Note
+  that the developer-observability platform highlight.io is a DISTINCT company
+  (YC-backed, acquired by LaunchDarkly) and is NOT this General Catalyst
+  portfolio company, so its API artifacts were deliberately not attributed here.
 url: https://raw.githubusercontent.com/api-evangelist/highlight/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,28 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- General Catalyst
+- Portfolio
+- Venture Backed
+- Stub
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: >-
+    Completed pass; no developer API surface found. Primary domain parked; VC
+    harvest flagged non-API provider. highlight.io is a different (non-GC)
+    company and was excluded to avoid misattribution.
