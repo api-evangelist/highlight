@@ -67,3 +67,9 @@ x-enrichment:
     Completed pass; no developer API surface found. Primary domain parked; VC
     harvest flagged non-API provider. highlight.io is a different (non-GC)
     company and was excluded to avoid misattribution.
+common:
+- type: ParentCompany
+  url: https://apis.io/providers/launchdarkly/
+  name: LaunchDarkly
+  x-relationship: acquired
+  x-evidence: "io is a DISTINCT company (YC-backed, acquired by LaunchDarkly) and is NOT this General Catalyst portfolio company, so its API artifacts were deliberately not attributed here."
